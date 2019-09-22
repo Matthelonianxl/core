@@ -17,7 +17,7 @@
     "spin.js": "^3.1.0",
     "webpack": "^4.17.1",
     "webpack-cli": "^2.1.5",
-    "webpack-merge": "^4.1.4"
+    "webpack-merge": "^4.2.2"
   },
   "scripts": {
     "build": "webpack --mode production",
