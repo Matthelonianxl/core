@@ -7,7 +7,7 @@
     "color-thief-browser": "^2.0.2",
     "expose-loader": "^0.7.5",
     "flarum-webpack-config": "^0.1.0-beta.9",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "jquery.hotkeys": "^0.1.0",
     "lodash-es": "^4.17.10",
     "m.attrs.bidi": "github:tobscure/m.attrs.bidi",
@@ -17,10 +17,14 @@
     "spin.js": "^3.1.0",
     "webpack": "^4.17.1",
     "webpack-cli": "^2.1.5",
-    "webpack-merge": "^4.1.4"
+    "webpack-merge": "^4.1.4",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "build": "webpack --mode production",
-    "watch": "webpack --mode development --watch"
-  }
+    "watch": "webpack --mode development --watch",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
